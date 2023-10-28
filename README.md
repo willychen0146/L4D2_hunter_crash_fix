@@ -5,7 +5,7 @@ This project is aimed at solving the game crash problem caused by hunter pouncin
 ## Require
 
 ```sh
-pip install vpk
+pip install -r requirements.txt
 ```
 
 ## Usage
