@@ -16,14 +16,8 @@ Path may be in:
 ```
 
 ```sh
-# unpack vpk binary file into vmt file
-python extract_vpk.py --input {vpk_file_path} --output {output_path}
-
-# fix the vmt
-python vmt_process.py --input {file_path_from_the_previous_step}
-
-# compack all file into vpk file (need to enter the {file_name}.vpk in the path)
-python compact_vpk.py --input {file_path_from_the_previous_step} --output {original_vpk_path}
+# fix VPK file
+python l4d2_fix_vpk.py --input {vpk_file_path}
 ```
 
 ## Issue
