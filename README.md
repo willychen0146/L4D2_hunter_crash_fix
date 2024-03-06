@@ -23,3 +23,13 @@ python l4d2_fix_vpk.py --input {vpk_file_path}
 ## Issue
 
 TODO: This program currently only highly reduces the chance of crashing, but does not completely fix the issue.
+
+## Authors
+
+- [@NoMercySusie](https://github.com/willychen0146)
+
+## LICENSE
+
+The project is made available under the MIT license. See the LICENSE file for more information.
+
+
