@@ -1,9 +1,10 @@
-import vpk
-import os
-import sys
 import argparse
+import os
 import shutil
+import sys
 from pathlib import Path
+
+import vpk
 
 parser = argparse.ArgumentParser(description="Reduce nodes from a VPK archive.")
 parser.add_argument("--input", "-i", required=True, help="VPK archive to replaced.")
@@ -57,6 +58,7 @@ def process_vmt_folder(folder_path):
 def compress_vpk(input_file_path, output_file_path):
     # collect all file in target folder, and compress into vpk file
     newvpk = vpk.new(input_file_path)
+    newvpk.version = 1
     newvpk.save(output_file_path)
     print("Compression complete✨")
 
@@ -72,4 +74,6 @@ def main():
     print(f"Your uncrash vpk is now at {args.input}! 🤓🤓🤓 \n(and your old vpk was renamed to {args.input}.old)")
 
 if __name__ == '__main__':
+    main()
+    main()
     main()
